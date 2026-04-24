@@ -5,6 +5,14 @@
 
 import { motion } from "motion/react";
 import { Mail, Phone } from "lucide-react";
+import fotka1 from "../fotka1.jpg";
+import fotka2 from "../fotka2.jpg";
+import fotka3 from "../fotka3.jpg";
+import fotka4 from "../fotka4.jpg";
+import fotka5 from "../fotka5.jpg";
+import fotka6 from "../fotka6.jpg";
+import fotka7 from "../fotka7.jpg";
+import fotka8 from "../fotka8.jpg";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -51,7 +59,7 @@ export default function App() {
       {/* Hero Section */}
       <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
         <img
-          src="/fotka1.jpg"
+          src={fotka1}
           alt="Jeníček a Mařenka"
           className="absolute inset-0 w-full h-full object-cover opacity-90"
           referrerPolicy="no-referrer"
@@ -83,7 +91,7 @@ export default function App() {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <motion.div {...fadeIn}>
             <img
-              src="/fotka2.jpg"
+              src={fotka2}
               alt="Couple"
               className="w-full h-auto shadow-xl"
               referrerPolicy="no-referrer"
@@ -107,14 +115,14 @@ export default function App() {
       <section className="max-w-7xl mx-auto pb-24 px-8 grid md:grid-cols-2 gap-8">
         <motion.img
           {...fadeIn}
-          src="/fotka3.jpg"
+          src={fotka3}
           alt="Gallery 1"
           className="w-full h-auto shadow-lg"
           referrerPolicy="no-referrer"
         />
         <motion.img
           {...fadeIn}
-          src="/fotka4.jpg"
+          src={fotka4}
           alt="Gallery 2"
           className="w-full h-auto shadow-lg"
           referrerPolicy="no-referrer"
@@ -232,7 +240,7 @@ export default function App() {
             >
               <div className="absolute -inset-4 border border-wedding-muted/20 -z-10 translate-x-8 translate-y-8" />
               <img
-                src="/fotka5.jpg"
+                src={fotka5}
                 alt="Schedule"
                 className="w-full aspect-[3/4] object-cover object-top shadow-2xl"
                 referrerPolicy="no-referrer"
@@ -307,7 +315,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
           <motion.img
             {...fadeIn}
-            src="/fotka6.jpg"
+            src={fotka6}
             alt="Gift 1"
             className="w-full md:w-1/4 aspect-square object-cover shadow-lg"
             referrerPolicy="no-referrer"
@@ -319,7 +327,7 @@ export default function App() {
           </motion.div>
           <motion.img
             {...fadeIn}
-            src="/fotka7.jpg"
+            src={fotka7}
             alt="Gift 2"
             className="w-full md:w-1/4 aspect-square object-cover shadow-lg"
             referrerPolicy="no-referrer"
@@ -334,7 +342,7 @@ export default function App() {
             initial={{ scale: 1.1 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 1.5 }}
-            src="/fotka8.jpg"
+            src={fotka8}
             alt="Footer Couple"
             className="w-full h-full object-cover opacity-80"
             referrerPolicy="no-referrer"
